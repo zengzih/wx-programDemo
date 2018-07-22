@@ -1,0 +1,32 @@
+<!--pages/wxWxs/wxs.wxml-->
+
+<!--<wxs module="tool">
+    var tools = {
+      splitStr: function(val) {
+        if (typeof val === 'string') {
+            val += ' 内部wxs';
+            return val.split(' ');
+        } else {
+            return [];
+        }
+      },
+      joinArr: function(val) {
+        if (toString.call(val) === 'array') {
+            val.push('内部wxs');
+            return val.join(' ');
+        } else {
+            return ' ';
+        }
+      }
+    };
+    module.exports = tools;
+</wxs>-->
+
+<wxs src="../../utils/util.wxs" module="tool"></wxs>
+
+
+<view class="list">
+    <ul>
+        <li wx:for="{{tool.splitStr(str)}}">{{item}}</li>
+    </ul>
+</view>

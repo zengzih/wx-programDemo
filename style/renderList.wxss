@@ -1,0 +1,15 @@
+.list {
+    width: 100%;
+}
+.list > ul {
+    display: inline-block;
+    width: 100%;
+}
+.list > ul li {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-top: -1px;
+    padding: 20rpx;
+    font-size: 30rpx;
+}

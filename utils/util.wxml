@@ -1,0 +1,6 @@
+<template name="renderList" options>
+    <view style="line-height: 80rpx;text-align: center;">我是外部模板</view>
+    <ul>
+        <li wx:for="{{options}}" wx:key="index">{{item.label}}</li>
+    </ul>
+</template>

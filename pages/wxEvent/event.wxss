@@ -1,0 +1,2 @@
+/* pages/wxEvent/event.wxss */
+@import "../../style/renderList.wxss";

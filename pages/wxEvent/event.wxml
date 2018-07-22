@@ -1,0 +1,7 @@
+<!--pages/wxEvent/event.wxml-->
+
+<view class="list">
+    <ul>
+        <li wx:for="{{options}}" wx:for-item="list" wx:key="{{index}}" bindtap="handlerClick" data-list="{{list}}">{{list.label}}</li>
+    </ul>
+</view>

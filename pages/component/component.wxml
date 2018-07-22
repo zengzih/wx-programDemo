@@ -1,0 +1,5 @@
+<!--pages/component/component.wxml-->
+<view class="component_swiper list">
+    <component-swiper interval="{{interval}}" options="{{options}}" bindlistevent="handlerListEvent"></component-swiper>
+    <button bindtap="handlerBtn">setInterval</button>
+</view>

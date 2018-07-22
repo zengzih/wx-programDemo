@@ -1,0 +1,37 @@
+<!--pages/wxDirective/directive.wxml-->
+
+
+<!-- 内部模板 -->
+<!--<template name="renderList" options>
+    <view style="line-height: 80rpx;text-align: center;">我是内部模板</view>
+    <ul>
+        <li wx:for="{{options}}" wx:for-item="list" wx:key="{{index}}">{{list.label}}</li>
+    </ul>
+</template>-->
+
+<!-- 外部模板 -->
+<import src="../wxTemplate/template.wxml"/>
+
+
+<!--for-->
+<block>
+    <!--<view class="list">
+        <ul>
+            <li wx:for="{{options}}" wx:for-item="list" wx:key="{{index}}">{{list.label}}</li>
+        </ul>
+    </view>-->
+
+    <!-- 使用模板 -->
+    <view class="list">
+        <template is="renderList" data="{{options: options}}"></template>
+    </view>
+</block>
+
+<!--if else-->
+
+<block>
+    <view wx:if="{{num > 5}}"> 1 </view>
+    <view wx:elif="{{num > 2}}"> 2 </view>
+    <view wx:else> 3 </view>
+</block>
+

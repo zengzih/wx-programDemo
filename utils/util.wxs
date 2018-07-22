@@ -1,0 +1,19 @@
+var tools = {
+  splitStr: function(val) {
+    if (typeof val === 'string') {
+        val += ' 外部wxs';
+        return val.split(' ');
+    } else {
+        return [];
+    }
+  },
+  joinArr: function(val) {
+    if (toString.call(val) === 'array') {
+        val.push('外部wxs');
+        return val.join(' ');
+    } else {
+        return ' ';
+    }
+  }
+};
+module.exports = tools;

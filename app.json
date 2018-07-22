@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/wxDirective/directive",
+    "pages/wxWxs/wxs",
+    "pages/wx/wx",
+    "pages/wxTemplate/template",
+    "pages/wxEvent/event",
+    "pages/navigateTo/navigate",
+    "pages/component/component"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/wxDirective/directive",
+        "text": "指令/模板"
+      },
+      {
+        "pagePath": "pages/wxWxs/wxs",
+        "text": "模块"
+      },
+      {
+        "pagePath": "pages/wxEvent/event",
+        "text": "事件"
+      },
+      {
+        "pagePath": "pages/component/component",
+        "text": "组件"
+      }
+    ]
+  }
+}

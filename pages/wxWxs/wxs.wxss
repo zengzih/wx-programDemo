@@ -1,0 +1,2 @@
+/* pages/wxWxs/wxs.wxss */
+@import "../../style/renderList.wxss";

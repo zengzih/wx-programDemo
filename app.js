@@ -1,4 +1,4 @@
-//app.js
+//app.js  commit
 App({
   onLaunch: function () {
     // 展示本地存储能力
